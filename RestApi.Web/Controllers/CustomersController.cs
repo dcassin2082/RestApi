@@ -14,6 +14,7 @@ namespace RestApi.Web.Controllers
     public class CustomersController : ControllerBase
     {
         private readonly TestDbContext _context;
+        private readonly Customer _customer = new Customer();
 
         public CustomersController(TestDbContext context)
         {
