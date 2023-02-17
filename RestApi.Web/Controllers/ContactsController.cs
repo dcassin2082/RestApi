@@ -16,7 +16,7 @@ namespace RestApi.Web.Controllers
     public class ContactsController : ControllerBase
     {
         private readonly IContactService _contactService;
-
+        private int _count;
         public ContactsController(IContactService contactService)
         {
             _contactService = contactService;

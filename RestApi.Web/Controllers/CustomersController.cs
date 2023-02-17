@@ -15,6 +15,10 @@ namespace RestApi.Web.Controllers
     {
         private readonly TestDbContext _context;
         private readonly Customer _customer = new Customer();
+        private int _id;
+        private string _name;
+        private string _email;
+        private string _password;
 
         public CustomersController(TestDbContext context)
         {
